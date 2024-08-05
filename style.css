@@ -1,0 +1,208 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Overall body style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the entire content */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header style */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.header .home {
+    font-size: 18px;
+    color: #4CAF50;
+    cursor: pointer;
+}
+
+.header .contact {
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+/* Login form style */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.login-form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Content style after login */
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Cards style */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.card {
+    background-color: #00008b;
+    color: #fff;
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: #00006f;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-chip {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.card-number {
+    font-size: 18px;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.card-owner, .card-expiry {
+    font-size: 14px;
+}
+
+/* Summary section style */
+.summary {
+    width: 100%;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.summary-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.summary-content p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .summary {
+        width: 100%;
+    }
+}

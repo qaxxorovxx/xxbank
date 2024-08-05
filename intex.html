@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karta Ma'lumotlari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">LOGO</div>
+            <div class="home">BOSH SAHIFA</div>
+            <a href="tel:+998946369352"><div class="contact">&#9742;</div></a>
+        </div>
+        <div class="login-form" id="login-form">
+            <h2>Kirish</h2>
+            <input type="text" id="nickname" placeholder="Foydalanuvchi nomi" required>
+            <input type="password" id="password" placeholder="Parol" required>
+            <button onclick="login()">Kirish</button>
+            <div id="login-error" class="error"></div>
+        </div>
+        <div class="content" id="content" style="display: none;">
+            
+            <div class="summary">
+                <div class="summary-title">Sizning karta ma'lumotlaringiz:</div>
+                <div class="summary-content" id="summary-content">
+                    <p id="summary-owner">Ism Familiya:</p>
+                    <p id="summary-card-number">Karta raqami:</p>
+                    <p id="balance"></p>
+                </div>
+                <button onclick="logout()">Chiqish</button>
+            </div>
+            <div class="cards" id="cards">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
